@@ -18,7 +18,7 @@ function App() {
       Name: "Product 1",
       Description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, suscipit!",
       Currency: "$",
-      Price: 10
+      Price: 10,
     },
     {
       id: 2,
@@ -46,18 +46,15 @@ function App() {
 
   // data push from card to checkout
 
-
   const [checkoutItems, setcheckoutItem] = useState([])
   const [total, settotal] = useState(0)
 
   let addToCart = (id) => {
-
-    let product = products.find(obj => obj.id == id);
+    let product = products.find(obj => obj.id === id);
     console.log(product)
     checkoutItems.push(product)
     setcheckoutItem([...checkoutItems])
     console.log(checkoutItems)
-
     settotal(total + product.Price)
   }
 

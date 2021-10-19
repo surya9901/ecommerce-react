@@ -5,7 +5,7 @@ function Header() {
         <>
             <header>
                 <nav className="navbar fixed-top navbar-expand-lg  navbar-dark bg-dark">
-                    <a className="navbar-brand" href="#">Ecommerce</a>
+                    <h1 style={{"color":"white"}}>Ecommerce</h1>
                 </nav>
             </header>
         </>
